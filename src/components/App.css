@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  @apply w-full h-screen grid bg-gray-100 text-gray-50;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.dark {
+  @apply w-full h-screen bg-gray-950 text-gray-200;
+
+}
+
+.todo {
+  transform: var(--translate);
+  transition: var(--transition, transform 0.1s ease);
+}
+.todo:active {
+  cursor: grabbing;
+}
+
